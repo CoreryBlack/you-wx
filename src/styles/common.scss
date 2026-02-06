@@ -1,0 +1,237 @@
+/**
+ * 全局公共样式
+ */
+@import './variables.scss';
+
+// ==================== 基础重置 ====================
+page {
+  background-color: $bg-color;
+  font-size: $font-size-base;
+  color: $text-primary;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+view, text, image {
+  box-sizing: border-box;
+}
+
+// ==================== 布局工具类 ====================
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.flex-between {
+  @include flex-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// ==================== 文字工具类 ====================
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-ellipsis {
+  @include text-ellipsis;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-warning {
+  color: $warning-color;
+}
+
+.text-danger {
+  color: $danger-color;
+}
+
+.text-gray {
+  color: $text-secondary;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-xs {
+  font-size: $font-size-xs;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+.text-base {
+  font-size: $font-size-base;
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+}
+
+.text-xl {
+  font-size: $font-size-xl;
+}
+
+// ==================== 间距工具类 ====================
+.m-0 { margin: 0; }
+.m-xs { margin: $spacing-xs; }
+.m-sm { margin: $spacing-sm; }
+.m-base { margin: $spacing-base; }
+.m-lg { margin: $spacing-lg; }
+.m-xl { margin: $spacing-xl; }
+
+.mt-xs { margin-top: $spacing-xs; }
+.mt-sm { margin-top: $spacing-sm; }
+.mt-base { margin-top: $spacing-base; }
+.mt-lg { margin-top: $spacing-lg; }
+.mt-xl { margin-top: $spacing-xl; }
+
+.mb-xs { margin-bottom: $spacing-xs; }
+.mb-sm { margin-bottom: $spacing-sm; }
+.mb-base { margin-bottom: $spacing-base; }
+.mb-lg { margin-bottom: $spacing-lg; }
+.mb-xl { margin-bottom: $spacing-xl; }
+
+.p-0 { padding: 0; }
+.p-xs { padding: $spacing-xs; }
+.p-sm { padding: $spacing-sm; }
+.p-base { padding: $spacing-base; }
+.p-lg { padding: $spacing-lg; }
+.p-xl { padding: $spacing-xl; }
+
+.px-base { padding-left: $spacing-base; padding-right: $spacing-base; }
+.py-base { padding-top: $spacing-base; padding-bottom: $spacing-base; }
+
+// ==================== 组件工具类 ====================
+.card {
+  @include card-style;
+  margin: $spacing-base;
+}
+
+.divider {
+  height: 1rpx;
+  background-color: $border-lighter;
+  margin: $spacing-base 0;
+}
+
+.safe-bottom {
+  @include safe-area-bottom;
+}
+
+// ==================== 按钮样式 ====================
+.btn {
+  @include btn-base;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: $font-size-md;
+  border-radius: $border-radius-xl;
+}
+
+.btn-primary {
+  @include btn-primary;
+}
+
+.btn-outline {
+  @include btn-base;
+  background-color: transparent;
+  color: $primary-color;
+  border: 1rpx solid $primary-color;
+  
+  &:active {
+    background-color: rgba($primary-color, 0.1);
+  }
+}
+
+.btn-ghost {
+  @include btn-base;
+  background-color: transparent;
+  color: $text-regular;
+}
+
+.btn-sm {
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: $font-size-sm;
+  padding: 0 $spacing-lg;
+  border-radius: $border-radius-lg;
+}
+
+.btn-lg {
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: $font-size-lg;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-round {
+  border-radius: 100rpx;
+}
+
+// ==================== 列表样式 ====================
+.list-item {
+  @include flex-between;
+  padding: $spacing-md 0;
+  border-bottom: 1rpx solid $border-extra-light;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:active {
+    background-color: $bg-gray;
+  }
+}
+
+.list-item-icon {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: $spacing-base;
+}
+
+.list-item-title {
+  flex: 1;
+  font-size: $font-size-base;
+  color: $text-primary;
+}
+
+.list-item-arrow {
+  font-size: $font-size-lg;
+  color: $text-placeholder;
+}
+
+// ==================== 页面通用样式 ====================
+.page-container {
+  min-height: 100vh;
+  background-color: $bg-color;
+  padding-bottom: 120rpx; // 为 tabBar 留出空间
+}

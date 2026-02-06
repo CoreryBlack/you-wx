@@ -1,0 +1,11 @@
+{
+  "setting": {
+    "es6": true,
+    "postcss": true,
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "miniprogramRoot": "dist/dev/mp-weixin",
+  "appid": "your_mp_weixin_appid_here",
+  "libVersion": "3.13.1"
+}

@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/index",
+    "pages/personal/login",
+    "pages/personal/bind-phone",
+    "pages/qrcode/qrcode",
+    "pages/oilcards/oilcards",
+    "pages/oilcards/activate"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "大牛加油站",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f5f5f5"
+  },
+  "permission": {
+    "scope.userInfo": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {}
+}

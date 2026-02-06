@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#E6212A",
+  "navigationBarTitleText": "大牛加油站",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "tab-bar": "../../components/TabBar/TabBar"
+  }
+}

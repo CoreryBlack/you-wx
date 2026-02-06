@@ -1,0 +1,1 @@
+.page{display:flex;flex-direction:column}.top{height:100px;background:green}.bottom{height:100px;background:red;margin-top:auto}.center{flex:1}

@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/index",
+    "pages/qrcode/qrcode",
+    "pages/oilcards/oilcards",
+    "pages/oilcards/activate",
+    "pages/personal/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#E6212A",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "大牛加油站",
+    "backgroundColor": "#F8F8F8"
+  },
+  "permission": {
+    "scope.userInfo": {
+      "desc": "用于完善会员资料"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";const t=require("../../utils/http.js");exports.bindPhone=s=>t.http.post("/auth/bind-phone",s),exports.sendSmsCode=s=>t.http.post("/auth/send-code",s),exports.wxLogin=s=>t.http.post("/users/wx-login",s);

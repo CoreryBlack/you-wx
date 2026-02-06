@@ -1,0 +1,1 @@
+<view class="empty-container data-v-de7e8903"><image class="empty-image data-v-de7e8903" src="{{a}}" mode="aspectFit"/><text class="empty-text data-v-de7e8903">{{b}}</text><slot/></view>

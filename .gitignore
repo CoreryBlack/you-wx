@@ -1,0 +1,23 @@
+### HBuilderX ###
+unpackage/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Ignore environment and private config files that may contain secrets
+server/.env
+.env
+.env.local
+.env.production
+project.private.config.json
+project.config.json
+src/manifest.json
+
+# Keep example files tracked (do not ignore .example templates)
+!.env.example
+!server/.env.example
+!project.config.example.json
+!src/manifest.example.json

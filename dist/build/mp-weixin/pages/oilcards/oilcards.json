@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的油卡",
+  "usingComponents": {
+    "empty": "../../components/Empty/Empty",
+    "balance-card": "../../components/BalanceCard/BalanceCard"
+  }
+}

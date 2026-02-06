@@ -1,0 +1,80 @@
+{ 
+	"pages": [
+		// 首页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarBackgroundColor": "#E6212A",
+				"navigationBarTitleText": "大牛加油站",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		// 个人中心页
+		{
+			"path": "pages/personal/index",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "大牛加油站",
+				"navigationBarBackgroundColor": "#E6212A"
+			}
+		},
+		// 登录页
+		{
+			"path": "pages/personal/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+        // 绑定手机号页
+        {
+            "path": "pages/personal/bind-phone",
+            "style": {
+                "navigationBarTitleText": "绑定手机号",
+                "navigationStyle": "default"
+            }
+        },
+		// 交易记录页
+		{
+			"path": "pages/personal/transactions",
+			"style": {
+				"navigationBarTitleText": "交易记录",
+				"navigationStyle": "default"
+			}
+		},
+		// 二维码页
+		{
+			"path": "pages/qrcode/qrcode",
+			"style": {
+				"navigationBarTitleText": "会员码"
+			}
+		},
+		// 油卡列表页
+		{
+			"path": "pages/oilcards/oilcards",
+			"style": {
+				"navigationBarTitleText": "我的油卡"
+			}
+		},
+		// 油卡激活页
+		{
+			"path": "pages/oilcards/activate",
+			"style": {
+				"navigationBarTitleText": "加油卡设置"
+			}
+		}
+	],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "@root/uni_modules/uview-next/components/u-$1/u-$1.vue"
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "大牛加油站",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#f5f5f5"
+	},
+	"uniIdRouter": {}
+}
